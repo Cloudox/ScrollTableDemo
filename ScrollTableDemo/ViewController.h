@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) UIView *headView;
+@property (strong, nonatomic) UIScrollView *buttonScrollView;
+@property (strong, nonatomic) UIScrollView *tableScrollView;
+@property (strong, nonatomic) UITableView *tableView;
 
 
 @end
