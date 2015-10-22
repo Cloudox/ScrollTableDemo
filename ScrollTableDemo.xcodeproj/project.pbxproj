@@ -14,6 +14,7 @@
 		AD9E67F71BD723FA002B4510 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9E67F61BD723FA002B4510 /* Images.xcassets */; };
 		AD9E67FA1BD723FA002B4510 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD9E67F81BD723FA002B4510 /* LaunchScreen.xib */; };
 		AD9E68061BD723FA002B4510 /* ScrollTableDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E68051BD723FA002B4510 /* ScrollTableDemoTests.m */; };
+		AD9E68111BD8B89C002B4510 /* CMCutLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E68101BD8B89C002B4510 /* CMCutLineView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		AD9E67FF1BD723FA002B4510 /* ScrollTableDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollTableDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9E68041BD723FA002B4510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD9E68051BD723FA002B4510 /* ScrollTableDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollTableDemoTests.m; sourceTree = "<group>"; };
+		AD9E680F1BD8B89B002B4510 /* CMCutLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCutLineView.h; sourceTree = "<group>"; };
+		AD9E68101BD8B89C002B4510 /* CMCutLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCutLineView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				AD9E67EE1BD723FA002B4510 /* AppDelegate.m */,
 				AD9E67F01BD723FA002B4510 /* ViewController.h */,
 				AD9E67F11BD723FA002B4510 /* ViewController.m */,
+				AD9E680F1BD8B89B002B4510 /* CMCutLineView.h */,
+				AD9E68101BD8B89C002B4510 /* CMCutLineView.m */,
 				AD9E67F31BD723FA002B4510 /* Main.storyboard */,
 				AD9E67F61BD723FA002B4510 /* Images.xcassets */,
 				AD9E67F81BD723FA002B4510 /* LaunchScreen.xib */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD9E67F21BD723FA002B4510 /* ViewController.m in Sources */,
+				AD9E68111BD8B89C002B4510 /* CMCutLineView.m in Sources */,
 				AD9E67EF1BD723FA002B4510 /* AppDelegate.m in Sources */,
 				AD9E67EC1BD723FA002B4510 /* main.m in Sources */,
 			);
