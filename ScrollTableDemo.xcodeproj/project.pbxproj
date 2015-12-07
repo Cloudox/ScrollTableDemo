@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD7905BE1C1510AA00436632 /* ScrollTableScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD7905BD1C1510AA00436632 /* ScrollTableScreen.jpg */; };
 		AD9E67EC1BD723FA002B4510 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E67EB1BD723FA002B4510 /* main.m */; };
 		AD9E67EF1BD723FA002B4510 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E67EE1BD723FA002B4510 /* AppDelegate.m */; };
 		AD9E67F21BD723FA002B4510 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E67F11BD723FA002B4510 /* ViewController.m */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD7905BD1C1510AA00436632 /* ScrollTableScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ScrollTableScreen.jpg; sourceTree = "<group>"; };
 		AD9E67E61BD723FA002B4510 /* ScrollTableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollTableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9E67EA1BD723FA002B4510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD9E67EB1BD723FA002B4510 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				AD9E67E81BD723FA002B4510 /* ScrollTableDemo */,
 				AD9E68021BD723FA002B4510 /* ScrollTableDemoTests */,
 				AD9E67E71BD723FA002B4510 /* Products */,
+				AD7905BD1C1510AA00436632 /* ScrollTableScreen.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,6 +220,7 @@
 				AD9E67F51BD723FA002B4510 /* Main.storyboard in Resources */,
 				AD9E67FA1BD723FA002B4510 /* LaunchScreen.xib in Resources */,
 				AD9E67F71BD723FA002B4510 /* Images.xcassets in Resources */,
+				AD7905BE1C1510AA00436632 /* ScrollTableScreen.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +438,7 @@
 				AD9E680B1BD723FA002B4510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD9E680C1BD723FA002B4510 /* Build configuration list for PBXNativeTarget "ScrollTableDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +447,7 @@
 				AD9E680E1BD723FA002B4510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
