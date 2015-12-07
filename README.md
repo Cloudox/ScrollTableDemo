@@ -3,7 +3,6 @@
 
 ## 效果图如下：
 ![](https://github.com/Cloudox/ScrollTableDemo/blob/master/ScrollTableScreen.jpg)
-
 ## 功能如下：
 
 1. 顶部的标题界面：标题、年份、用户可以改变内容
