@@ -42,7 +42,7 @@
     
     // 标题label
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 26, [UIScreen mainScreen].bounds.size.width - 20, 16)];
-    titleLabel.text = @"XXX国家自然科学基金项目";
+    titleLabel.text = @"XXX我是一个标题";
     titleLabel.backgroundColor = [UIColor clearColor];
     titleLabel.textColor = [UIColor whiteColor];
     titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -87,7 +87,7 @@
     self.buttonScrollView.bounces = NO;// 到边界不弹回
     self.buttonScrollView.showsHorizontalScrollIndicator = NO;// 不显示横向滚动条
     
-    self.btnTitleArray = [[NSMutableArray alloc] initWithObjects:@"基本信息", @"资助项目", @"发表信息", @"奖励信息", nil];
+    self.btnTitleArray = [[NSMutableArray alloc] initWithObjects:@"社会新闻", @"科技新闻", @"娱乐新闻", @"体育新闻", nil];
     
     self.btnArray = [[NSMutableArray alloc] init];
     
