@@ -15,6 +15,8 @@
 		AD9E67FA1BD723FA002B4510 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD9E67F81BD723FA002B4510 /* LaunchScreen.xib */; };
 		AD9E68061BD723FA002B4510 /* ScrollTableDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E68051BD723FA002B4510 /* ScrollTableDemoTests.m */; };
 		AD9E68111BD8B89C002B4510 /* CMCutLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E68101BD8B89C002B4510 /* CMCutLineView.m */; };
+		AD9E68141BD8E004002B4510 /* ScrollTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E68131BD8E004002B4510 /* ScrollTableView.m */; };
+		AD9E68171BD9D556002B4510 /* DetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E68161BD9D556002B4510 /* DetailModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		AD9E68051BD723FA002B4510 /* ScrollTableDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollTableDemoTests.m; sourceTree = "<group>"; };
 		AD9E680F1BD8B89B002B4510 /* CMCutLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCutLineView.h; sourceTree = "<group>"; };
 		AD9E68101BD8B89C002B4510 /* CMCutLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCutLineView.m; sourceTree = "<group>"; };
+		AD9E68121BD8E004002B4510 /* ScrollTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollTableView.h; sourceTree = "<group>"; };
+		AD9E68131BD8E004002B4510 /* ScrollTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollTableView.m; sourceTree = "<group>"; };
+		AD9E68151BD9D556002B4510 /* DetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailModel.h; sourceTree = "<group>"; };
+		AD9E68161BD9D556002B4510 /* DetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,10 @@
 				AD9E67F11BD723FA002B4510 /* ViewController.m */,
 				AD9E680F1BD8B89B002B4510 /* CMCutLineView.h */,
 				AD9E68101BD8B89C002B4510 /* CMCutLineView.m */,
+				AD9E68121BD8E004002B4510 /* ScrollTableView.h */,
+				AD9E68131BD8E004002B4510 /* ScrollTableView.m */,
+				AD9E68151BD9D556002B4510 /* DetailModel.h */,
+				AD9E68161BD9D556002B4510 /* DetailModel.m */,
 				AD9E67F31BD723FA002B4510 /* Main.storyboard */,
 				AD9E67F61BD723FA002B4510 /* Images.xcassets */,
 				AD9E67F81BD723FA002B4510 /* LaunchScreen.xib */,
@@ -226,7 +236,9 @@
 			files = (
 				AD9E67F21BD723FA002B4510 /* ViewController.m in Sources */,
 				AD9E68111BD8B89C002B4510 /* CMCutLineView.m in Sources */,
+				AD9E68171BD9D556002B4510 /* DetailModel.m in Sources */,
 				AD9E67EF1BD723FA002B4510 /* AppDelegate.m in Sources */,
+				AD9E68141BD8E004002B4510 /* ScrollTableView.m in Sources */,
 				AD9E67EC1BD723FA002B4510 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

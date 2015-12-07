@@ -1,44 +1,40 @@
 //
-//  ViewController.m
+//  ScrollTableView.m
 //  ScrollTableDemo
 //
-//  Created by csdc-iMac on 15/10/21.
+//  Created by csdc-iMac on 15/10/22.
 //  Copyright (c) 2015年 csdc. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "CMCutLineView.h"
 #import "ScrollTableView.h"
+#import "CMCutLineView.h"
 
-@interface ViewController ()
+@implementation ScrollTableView
 
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+-(instancetype)initWithFrame:(CGRect)frame andData:(DetailModel *)data{
+    self = [super initWithFrame:frame];
     
-    ScrollTableView *scrollTableView = [[ScrollTableView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) andData:nil];
-    [self.view addSubview:scrollTableView];
+    if (self) {
+        [self headTitleView];
+        
+        [self scrollBtnView];
+        
+        [self initDataSource];
+        
+        [self allTableScrollView];
+        
+        [self initDownTables];
+    }
     
-//    [self headTitleView];
-//    
-//    [self scrollBtnView];
-//    
-//    [self initDataSource];
-//    
-//    [self allTableScrollView];
-//    
-//    [self initDownTables];
+    return self;
 }
+
 
 // 顶部标题view
 - (void)headTitleView {
     self.headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 87)];
     self.headView.backgroundColor = [UIColor colorWithRed:0.0/255.0 green:76.0/255.0 blue:103.0/255.0 alpha:1.0];
-    [self.view addSubview:self.headView];
+    [self addSubview:self.headView];
     
     // 标题label
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 26, [UIScreen mainScreen].bounds.size.width - 20, 16)];
@@ -48,7 +44,7 @@
     titleLabel.textAlignment = NSTextAlignmentCenter;
     [titleLabel setFont:[UIFont systemFontOfSize:15]];
     titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-    // 自动换行
+    // Label自动换行
     titleLabel.numberOfLines = 0;
     titleLabel.opaque = NO;
     NSString *text = titleLabel.text;
@@ -60,7 +56,7 @@
     // 如果换行了，增加headview高度
     if (titleLabel.frame.size.height > 20) {
         self.headView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 71 + labelsize.height);
-//        yearAndDirectorLabel.frame = CGRectMake(0, 42 + labelsize.height, [UIScreen mainScreen].bounds.size.width, 13);
+        //        yearAndDirectorLabel.frame = CGRectMake(0, 42 + labelsize.height, [UIScreen mainScreen].bounds.size.width, 13);
     }
     [self.headView addSubview:titleLabel];
     
@@ -77,6 +73,7 @@
         yearAndDirectorLabel.frame = CGRectMake(0, 42 + labelsize.height, [UIScreen mainScreen].bounds.size.width, 13);
     }
     [self.headView addSubview:yearAndDirectorLabel];
+    
 }
 
 // 滑动标签栏
@@ -121,7 +118,7 @@
     // 底部分割线
     CMCutLineView *cutLineView = [[CMCutLineView alloc] initWithFrame:CGRectMake(0, self.buttonScrollView.frame.size.height - 1, self.buttonScrollView.contentSize.width, 1) lineColor:[UIColor blackColor] alpha:0.07 isDashLine:NO lineWidth:1];
     [self.buttonScrollView addSubview:cutLineView];
-    [self.view addSubview:self.buttonScrollView];
+    [self addSubview:self.buttonScrollView];
 }
 
 // 点击标签响应
@@ -180,7 +177,7 @@
         self.tableScrollView.bounces = NO;
         self.tableScrollView.directionalLockEnabled = YES;
         self.tableScrollView.delegate = self;
-        [self.view addSubview:self.tableScrollView];
+        [self addSubview:self.tableScrollView];
     }
     return self.tableScrollView;
 }
@@ -242,17 +239,19 @@
     if(nil == cell){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:SimpleCell];
     }
-//    NSLog(@"%ld", (long)self.currentPage);
+    //    NSLog(@"%ld", (long)self.currentPage);
     cell.textLabel.text = self.datasources[self.currentPage][[indexPath row]];
     cell.userInteractionEnabled = NO;
     
     return cell;
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
 }
+*/
 
 @end
